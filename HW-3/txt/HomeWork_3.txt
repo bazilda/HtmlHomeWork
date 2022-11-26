@@ -1,0 +1,23 @@
+1. Make sure you have your organization Java50YourName in GitHub
+2. Make sure you have public repository html-css-js-introduction in above organization
+3. Make sure you have at least one commit in the branch "master"
+4. Create new branch "useful-links"
+5. If you have issues with #3 - #4 see previous lesson
+6. If you have issues with #1 -  #2 see current lesson 
+7. In the view Source Control (Ctrl-Shift-G) hit ... (symbol of a pull down menu)
+8. In pull down menu select remote
+9. In appeared input field with "enter URL of GitHub repository" type (copy/paste) URL of the GitHub repository created in #2
+10. In appeared input field with "enter name" type name "origin"
+11. There should be blue button "Publish Brand" at the left panel activated and hit this button
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+1. Убедитесь, что у вашей организации есть Java50YourName в GitHub.
+2. Убедитесь, что у вас есть общедоступный репозиторий html-css-js-introduction в вышеуказанной организации.
+3. Убедитесь, что у вас есть хотя бы один коммит в ветке "master"
+4. Создать новую ветку "полезные ссылки"
+5. Если у вас есть проблемы с № 3 - № 4, см. предыдущий урок.
+6. Если у вас есть проблемы с #1 - #2, см. текущий урок
+7. В представлении Source Control (Ctrl-Shift-G) нажмите ... (символ выпадающего меню)
+8. В выпадающем меню выберите удаленный
+9. В появившемся поле ввода с «введите URL-адрес репозитория GitHub» введите (скопируйте/вставьте) URL-адрес репозитория GitHub, созданного в #2
+10. В появившемся поле ввода с «введите имя» введите имя «происхождение».
+11. На левой панели должна быть активирована синяя кнопка «Опубликовать бренд» и нажмите эту кнопку.
