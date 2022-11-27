@@ -1,0 +1,13 @@
+.maim-class{
+    display:flex;
+    flex-direction: column;
+}
+.section-class{
+    display: flex;
+    flex-direction: row;
+}
+.div-class{
+    width:5vw;
+    height:5vw;
+    border: solid 1px grey
+}
