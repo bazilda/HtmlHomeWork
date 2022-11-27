@@ -1,13 +1,38 @@
-.maim-class{
+.board-class{
     display:flex;
     flex-direction: column;
 }
-.section-class{
+.row-class{
+    display: flex;
+    flex-direction: row ;
+}
+.rowEven-class{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.set-class{
     display: flex;
     flex-direction: row;
 }
-.div-class{
-    width:5vw;
-    height:5vw;
-    border: solid 1px grey
+.cell-class{
+    display: block;
+    width:12.5vw;
+    height:12.5vw;
+    border: solid 1px black
+}
+.cellBlack-class{
+    display: block;
+    width: 12.5vw;
+    height:12.5vw;
+    border: solid 1px black
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+html{
+    height: 100%
 }
