@@ -1,37 +1,46 @@
  
  
   .board-class{
+   
+   
     display:flex;
     flex-direction: column;
     background-color: antiquewhite;
+
 
 }
 .row-class{
     display: flex;
     flex-direction: row ;
+ 
 }
 .rowEven-class{
     display: flex;
     flex-direction: row-reverse;
+    
 }
 
 
 .cell-class{
-    display: block;
-    width:12.5vw;
-    height:12.5vw;
+ 
+    width:5vw;
+    height:5vw;
     border: solid 1px black;
 }
 .cellBlack-class{
-    display: block;
-    width: 12.5vw;
-    height:12.5vw;
+
+    width: 5vw;
+    height:5vw;
     border: solid 1px black;
     background-color: black;
 }
+
 body{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
-  
+    height: 100%;
+}
+html {
+height: 100%;
 }
