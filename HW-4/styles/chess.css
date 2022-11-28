@@ -1,6 +1,10 @@
-.board-class{
+ 
+ 
+  .board-class{
     display:flex;
     flex-direction: column;
+    background-color: antiquewhite;
+
 }
 .row-class{
     display: flex;
@@ -11,28 +15,23 @@
     flex-direction: row-reverse;
 }
 
-.set-class{
-    display: flex;
-    flex-direction: row;
-}
+
 .cell-class{
     display: block;
     width:12.5vw;
     height:12.5vw;
-    border: solid 1px black
+    border: solid 1px black;
 }
 .cellBlack-class{
     display: block;
     width: 12.5vw;
     height:12.5vw;
-    border: solid 1px black
+    border: solid 1px black;
+    background-color: black;
 }
 body{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    height: 100%;
-}
-html{
-    height: 100%
+  
 }
