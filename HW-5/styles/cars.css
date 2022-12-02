@@ -1,4 +1,13 @@
-html {
+@font-face{
+    font-family:airstream ;
+    src:url(fonts/);
+    src:url()
+}
+@font-face{
+    font-family: lakeshor;
+    src: url(fonts/)
+}
+    html {
     height: 100%;
 }
 body {
@@ -13,10 +22,14 @@ body {
     background-color: rgb(253, 253, 47);
     font-size: 5 em;
     text-transform: uppercase;
+    text-decoration-color: aliceblue;
+    font-family: lakeshor;
 }
+
 .main-class {
     display: flex;
-    flex-direction: column ;    
+    flex-direction: column ;  
+   
 }
 .details-container{
     display: flex;
@@ -28,6 +41,7 @@ body {
 }
 .details-title{
     display: block;
+   
     text-align: center;
     background-color: brown;
 }
@@ -52,7 +66,7 @@ overflow: hidden;
 }
 .thumbnails-image {
 width: 30vw;
-height: 20w;
+height: 20vw;
 }
 .thumbnails-title{
     display: block;
