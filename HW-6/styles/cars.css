@@ -1,0 +1,123 @@
+@font-face {
+    font-family:airstream ;
+    src:url(fonts/airstream-webfont.svg);
+    src:url(fonts/airstream-webfont.woff);
+}
+@font-face {
+    font-family: lakeshor;
+    src: url(fonts/lakeshor-webfont.svg);
+    src: url(fonts/lakeshor-webfont.woff);
+}
+    html {
+    height: 100%;
+}
+body {
+    height: 100% ;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    display: block;
+    text-align: center;
+    background-color: rgb(253, 253, 47);
+    font-size: 5 em;
+    text-transform: uppercase;
+  /*  text-decoration-color: aliceblue;*/
+  /*  font-family: lakeshor;*/
+}
+
+.main-class {
+    display: flex;
+    flex-direction: column ;  
+  
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+}
+.details-image{
+    width: 98;vw;
+    height: 40vw;
+}
+.details-title{
+    display: block;
+    text-align: center;
+    background-color: brown;
+}
+.thumbnails-list{
+   display: flex; 
+   flex-wrap: wrap;
+   max-height: 50%;
+   overflow-y: scroll;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0;
+   
+   
+}
+.thumbnails-item{
+border: solid 3px blue;
+margin-top: 15vw;
+border-radius: 25%;
+overflow: hidden;
+}
+.thumbnails-ancor{
+text-decoration: none;
+}
+.thumbnails-image {
+width: 20vw;
+height: 12vw;
+}
+.thumbnails-title{
+    display: block;
+    text-align: center;
+    background-color: rgb(57, 167, 218);
+    height: 5vw;
+}
+@media (min-width: 560px){
+ .main-class{
+    flex-direction: row;
+    justify-content: space-around;
+ }
+  .thumbnails-list{
+    order: -1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 70vh;
+    justify-content: flex-start;
+   
+  }
+  .thumbnails-item{
+    min-height: 12vw;
+    margin-top: 3vw;
+  }
+  .thumbnails-title{
+    min-height: 3vw;
+  }
+ .logo{
+    display: inline-block;
+ }
+ .details-image{
+    width: 50vw;
+    height: 30vw;
+}
+.details-container{
+    display: block;
+   flex-direction: column ;
+  align-items: center;
+}
+}
+@media (min-width: 1000px){
+    .thumbnails-list{
+        max-height: 80vh;
+    }
+    .details-image{
+        width: 75vw;
+        height: 58vw;
+    }
+    .details-title{
+      min-height: 5vw;
+    
+    }
+}
