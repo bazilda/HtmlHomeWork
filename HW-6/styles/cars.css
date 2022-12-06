@@ -6,16 +6,18 @@
 @font-face {
     font-family: lakeshor;
     src: url(fonts/lakeshor-webfont.svg);
-    src: url(fonts/lakeshor-webfont.woff);
+    src: url(fonts/LAKESHOR-webfont.woff);
 }
     html {
     height: 100%;
 }
 body {
-    height: 100% ;
+  height: 100% ;  
     background-color: black;
     display: flex;
     flex-direction: column;
+margin: 0;
+   
 }
 .logo {
     display: block;
@@ -23,22 +25,29 @@ body {
     background-color: rgb(253, 253, 47);
     font-size: 5 em;
     text-transform: uppercase;
-  /*  text-decoration-color: aliceblue;*/
-  /*  font-family: lakeshor;*/
+  font-family: lakeshor;
 }
 
 .main-class {
     display: flex;
     flex-direction: column ;  
-  
+     /* height: 91%;*/
 }
 .details-container{
+
     display: flex;
     flex-direction: column;
+    
 }
 .details-image{
-    width: 98;vw;
-    height: 40vw;
+ 
+    width: 90vw;
+    height: 30vh;
+    border: solid 3px blue;
+margin-top: 15vw;
+border-radius: 25%;
+overflow: hidden;
+
 }
 .details-title{
     display: block;
@@ -48,7 +57,7 @@ body {
 .thumbnails-list{
    display: flex; 
    flex-wrap: wrap;
-   max-height: 50%;
+   max-height: 69vw;
    overflow-y: scroll;
     list-style: none;
     justify-content: space-around;
@@ -61,6 +70,7 @@ border: solid 3px blue;
 margin-top: 15vw;
 border-radius: 25%;
 overflow: hidden;
+
 }
 .thumbnails-ancor{
 text-decoration: none;
@@ -97,10 +107,12 @@ height: 12vw;
   }
  .logo{
     display: inline-block;
+    /*font-size: 80%;*/
  }
  .details-image{
-    width: 50vw;
-    height: 30vw;
+  margin-top: 5%;
+    width: 40vw;
+  height: 28vw;
 }
 .details-container{
     display: block;
@@ -111,15 +123,21 @@ height: 12vw;
 @media (min-width: 1000px){
     .thumbnails-list{
         max-height: 90vh;
+        
     }
     .details-image{
         width: 75vw;
-        height: 58vw;
+        height: 58vh;
+     
     }
     .details-title{
       min-height: 5vw;
     
     }
    
-    
+    /*.details-container{
+        justify-content: space-around;
+        height: 100% ;
+        align-items: center;
+    }*/
 }
