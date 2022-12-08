@@ -18,8 +18,8 @@ body {
     --thumbnails-image-width: 20vw;
     --thumbnails-image-height: 12vw;
     --thumbnails-title-height: calc(var(--thumbnails-image-height)*0.33);
-    --details-image-width: 70vw;
-    --details-image-height: 40vw;
+    --details-image-width: 60vw;
+    --details-image-height: 35vw;
 }
 
 body {
@@ -47,26 +47,37 @@ body {
 .details-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(var(--details-image-height)*1.2);
+}
+
+.details-frame {
+
+    position: relative;
 }
 
 .details-image {
+
     width: var(--details-image-width);
     height: var(--details-image-height);
     border-radius: 25%;
+    border: solid 3px blue;
+
 }
 
 .details-title {
-    bottom: 6vh;
-    left: -2vw;
     display: block;
-    text-align: center;
     background-color: brown;
+    position: absolute;
+    bottom: 2vh;
+    left: -3vw;
 }
 
 .thumbnails-list {
     display: flex;
     flex-wrap: wrap;
-    max-height: 50%;
+    max-height: 40%;
     overflow-y: scroll;
     list-style: none;
     justify-content: space-around;
@@ -80,6 +91,12 @@ body {
     overflow: hidden;
     min-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
     min-width: var(--thumbnails-image-width);
+    max-width: var(--thumbnails-image-width);
+    margin-left: 1vw;
+}
+
+.thumbnails-item:hover {
+    transform: scale(1.1);
 }
 
 .thumbnails-ancor {
@@ -95,7 +112,6 @@ body {
     display: block;
     text-align: center;
     background-color: rgb(57, 167, 218);
-    /*height: 5vw;*/
     height: var(--thumbnails-title-height);
 }
 
@@ -114,6 +130,7 @@ body {
     }
 
     .thumbnails-list {
+        padding-right: 2vw;
         order: -1;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -122,29 +139,24 @@ body {
     }
 
     .thumbnails-item {
-        /*  min-height: 15vw;*/
+
         margin-top: 1vw;
     }
 
-    /*.thumbnails-title{
-    height: 3vw;
-  }*/
+
+
     .logo {
         display: inline-block;
     }
 
-    .details-container {
-        display: block;
-        flex-direction: column;
-        align-items: center;
-    }
+
 }
 
 @media (min-width: 1000px) {
     body {
 
-        --details-image-width: 75vw;
-        --details-image-height: 58vw;
+        --details-image-width: 60vw;
+        --details-image-height: 40vw;
     }
 
     .thumbnails-list {
@@ -153,5 +165,6 @@ body {
 
     .details-title {
         min-height: 5vw;
+        min-width: 30vw;
     }
 }
