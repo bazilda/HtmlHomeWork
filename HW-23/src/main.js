@@ -14,10 +14,8 @@ const schema = [
     {columnName: "City", fieldName: 'city'}
 ]
 const company = new Company();
-
 const tableEmployees= new Table("Employees", schema);
 const employeeForm=new EmployeeForm();
-
 const arraySheets=[
     {Caption:"Add Employee", data:employeeForm},
     {Caption:"Show all employes", data:tableEmployees}

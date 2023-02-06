@@ -26,7 +26,7 @@ export class  MySheets {
             let sheetCaption = arraySheets[sheetNum].Caption;
             parentSheetElement.innerHTML += `<button id="sheet-button-${sheetNum}" class="tablink-caption">${sheetCaption}</button> `;
             let btnElement = document.getElementById(`sheet-button-${sheetNum}`);
-            btnElement.addEventListener("click", function () { alert("kuku"); });
+          //  btnElement.addEventListener("click", function () { alert("kuku"); });
             this.#sheetButtons[sheetNum] = btnElement;
         }
 
