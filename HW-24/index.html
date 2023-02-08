@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company HW-24</title>
+   <link rel="stylesheet" href="styles/videoStyles.css">
+</head>
+
+<body>
+
+    <section class="video" id="my-video"> 
+
+    </section>
+
+    <button class="startBtn" id="btnStart">Start</button>
+
+    <script src="src/main.js" type="module"></script>
+    <script src="src/ui/video.js" type="module"></script>
+    <script type="module"> 
+        import {onStart} from "./src/main.js";
+        document.getElementById("btnStart").addEventListener('click', onStart);
+    </script>
+</body>
+
+</html>
