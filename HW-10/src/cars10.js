@@ -31,4 +31,3 @@ for(let i = 0; i < anchorElements.length; i++){
 }
 
 hideButtonElement.addEventListener("clic",hideDetails);
-

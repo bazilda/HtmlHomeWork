@@ -109,4 +109,13 @@ function computeSalaryBudget(employees) {
 }
 console.log(computeSalaryBudget(employees));
 
+function rehovotWithMaxId( (array.filter()){
+    const res = array.reduce(function(res,cur){
+        return res>cur.id?res:cur.id;
+       
+  });
+return res;
+}
+console.log (`result max array=[123,9,88,4,-7,100,7,-88,] is ${getMax(array) }` );
 
+}

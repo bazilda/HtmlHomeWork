@@ -129,8 +129,22 @@ function getMinMaxAvg(array3) {
 
 console.log(` result min max avg for array=[123,9,88,4,-7,100,7,-88,] is ${getMinMaxAvg(array3)}`);
 
+function getMinMaxAvgy(array3) {
+    const result = array3.reduce(function (ar, cur) {
+        if (cur < ar[0]){
+            ar[0] = cur;
+        } else if (cur > ar[1]){
+            ar[1] = cur;
 
+        }
+        ar[2] += cur;
+        return ar;
+    }, [array[0],array[0],0]);
+    result[2]/=array.length;
+    return result;
 
+}
+console.log(` result min max avgy for array=[123,9,88,4,-7,100,7,-88,] is ${getMinMaxAvgy(array3)}`);
 // reduse.3.2
 
 // const array2=[-10,10,45,-45,1];  //[-45,-10,1,10,45]
@@ -163,5 +177,3 @@ console.log(` result min max avg for array=[123,9,88,4,-7,100,7,-88,] is ${getMi
 // [1,2,3,4].reduse(function(x,y){
 //     console.log(x,y)
 // });
-
- 
